@@ -1,4 +1,4 @@
-# Created by https://www.gitignore.io/api/osx,jekyll
+# Created by https://www.gitignore.io/api/osx,sass,jekyll
 
 ### Jekyll ###
 _site/
@@ -32,4 +32,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# End of https://www.gitignore.io/api/osx,jekyll
+### Sass ###
+*.css.map
+
+# End of https://www.gitignore.io/api/osx,sass,jekyll
