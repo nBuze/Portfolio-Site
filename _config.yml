@@ -1,2 +1,3 @@
+# Build settings
 name: Nolan Buzanis
-	markdown: kramdown
+markdown: kramdown
