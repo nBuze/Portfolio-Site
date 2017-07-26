@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Lora', serif;
+}
+h2 {
+    font-family: 'Palatino', serif;
+    font-variant: small-caps;
+    color: #4E62C3;
+    font-size: 3em;
+    padding: 50px 15px 40px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/guitar_cover.jpeg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Palatino', serif;
+}
+
+header ul {
+    float: right;
+}
+
+header ul a {
+    display: inline-block;
+    padding: 20px 30px 0 0;
+    font-variant: none;
+    font-size: 16px;
+    text-decoration: none;
+    color: inherit;
+    font-family: "Open Sans", sans-serif;
+}
+
+header ul a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+header div.header-title {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    top: 62%;
+    text-align: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+header div h1 {
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-variant: small-caps;
+}
+
+header div p {
+    font-size: 24px;
+    font-style: italic;
+}
+
+ /* About Section  */
+
+ section {
+     box-sizing: border-box;
+     width: 100%;
+     padding: 0 10%;
+ }
+
+.about-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    margin-bottom: 20px;
+    padding: 0 5%;
+}
+
+.about-icons div {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+div.headshot {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    order: 3;
+    background: url('../img/headshot.png') right top no-repeat;
+    background-size: cover;
+}
+
+.about-icons div svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    margin: 0 0 0 -30px;
+}
+.icon1 {
+    order: 1;
+}
+.icon4 {
+    order: 3;
+}
+svg .fill {
+    fill: orange;
+}
+
+.objective {
+    position: relative;
+    max-width: 660px;
+    font-weight: 400;
+    font-size: 20px;
+    word-spacing: 0.7px;
+    margin: 0 auto;
+    padding: 30px 0 30px;
+    line-height: 1.1em;
+    text-align: center;
+}
+
+.objective strong {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.objective a {
+    display: block;
+    color: #4E62C3;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px 10px 0 0;
+    text-align: right;
+}
+
+.objective a:hover {
+    color: rgba(78,98,195,0.8);
+}
+
+section#projects{
+    background-color: #45414D;
+    padding: 0;
+}
+
+.gallery {
+    width: 100%;
+    margin: 15px auto 0;
+}
+
+/* An anchor tag with a attribute that starts with..*/
+a[class^="gallery-item-"] {
+    display: block;
+    width: 33.33%;
+    height: 300px;
+    background: url('../img/guitar_cover.jpeg') center center no-repeat;
+    background-size: cover;
+    float: left;
+    position: relative;
+}
+.gallery::after {
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.thumbnail-cover {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    background: rgba(78,98,195,0.9);
+}
+
+.thumbnail-cover:hover {
+    opacity: 1;
+    transition: 0.7s ease;
+}
+
+.thumbnail-text {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    margin: 0 auto;
+    font-family: 'Roboto', serif;
+    width: 99%;
+}
+.thumbnail-text h4 {
+    padding-bottom: 5px;
+    font-size: 24px;
+}
+
+.thumbnail-text p {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.projects-link {
+    padding: 30px 35px 90px 0;
+    text-align: right;
+}
+
+.allprojects {
+    color: #4E62C3;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 20px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    font-family: 'Palatino', serif;
+}
+
+.allprojects:hover {
+    color: rgba(78,98,195,0.8);
+}
+
+div.contact-info, div.contact-form {
+    display: inline-block;
+    background: #4E62C3;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    height: 375px;
+    margin-bottom: 60px;
+}
+
+div.contact-info {
+    width: 325px;
+}
+
+div.contact-form {
+    width: 600px;
+}
+
+section#contact {
+    padding: 0 40px;
+    text-align: center;
+}
+
+footer {
+    height: 130px;
+    width: 100%;
+    background: url('../img/guitar_cover.jpeg') center center no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+footer ul {
+    float: left;
+    position: relative;
+    top: 45%;
+    padding-left: 20px;
+}
+
+footer ul a{
+    display: inline-block;
+    padding: 0 0 0 30px;
+    font-variant: none;
+    font-size: 16px;
+    text-decoration: none;
+    color: inherit;
+    font-family: "Open Sans", sans-serif;
+}
+
+footer small {
+    float: right;
+    position: relative;
+    top: 45%;
+    padding: 10px 30px 0 0;
+}
+@media only screen and (max-width : 940px), only screen and (max-device-width : 940px) {
+    a[class^="gallery-item-"] {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 480px), only screen and (max-device-width : 480px) {
+    a[class^="gallery-item-"] {
+        width: 100%;
+    }
+}
