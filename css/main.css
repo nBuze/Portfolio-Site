@@ -161,10 +161,14 @@ a[class^="gallery-item-"] {
     display: block;
     width: 33.33%;
     height: 300px;
-    background: url('../img/guitar_cover.jpeg') center center no-repeat;
-    background-size: cover;
+    background: rgba(0,0,0,0.5);
     float: left;
     position: relative;
+}
+
+a.gallery-item-1 {
+    background: url('../img/guitar_cover.jpeg') center center no-repeat;
+    background-size: cover;
 }
 .gallery::after {
     content: "";
