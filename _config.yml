@@ -1,3 +1,5 @@
 # Build settings
 name: Nolan Buzanis
-markdown: kramdown
+markdown: redcarpet
+
+exclude: ['README.md', 'CNAME']
