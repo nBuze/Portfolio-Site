@@ -74,3 +74,10 @@ input:-moz-placeholder { /* Firefox 18- */
 strong {
     font-weight: 700;
 }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
