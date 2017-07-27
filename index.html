@@ -123,21 +123,23 @@
             </div>
             <div class="contact-form">
                 <h3>Contact Form</h3>
+                <form id="contactForm">
                 <div class="inputs">
                 <div class="form-left">
-                    <small>Name</small>
-                    <input type="text" name="name" value="">
-                    <small>Email</small>
-                    <input type="text" name="name" value="">
-                    <small>Subject</small>
-                    <input type="text" name="name" value="">
+                    <label for="name">Name</label>
+                    <input type="text" id="inputName" name="name" value="">
+                    <label for="email">Email</label>
+                    <input type="text" id="inputEmail" name="email" value="">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="inputSubject" name="subject" value="">
                 </div>
                 <div class="form-right">
-                    <small>Content</small>
-                    <textarea name="name" rows="" cols="" class="form-content"></textarea>
-                    <button class="send" type="button" name="button">Send</button>
+                    <label for="content">Content</label>
+                    <textarea id="inputContent" name="content" rows="" cols="" class="form-content"></textarea>
+                    <input id="send" type="button" name="send" onclick="sendEmail();" >Send</input>
                 </div>
                 </div>
+                </form>
             </div>
         </div>
     </section>
@@ -150,6 +152,26 @@
         </ul>
         <small>© Copyright 2017 Nolan Buzanis</small>
     </footer>
+    
+    <script>
+       
+       function sendEmail() {
+        
+        var name = document.getElementById('inputName').value,
+            email = document.getElementById('inputEmail').innerHTML,
+            subject = document.getElementById('inputSubject').innertext,
+            content = document.getElementById('inputContent').value;
+         
+        if (!name || !email || !subject || !content) {
+            console.log('Invalid entry');
+        }
+        else {
+            console.log('Values saved!');
+        }
+        
+        
+       }
+    </script>
 </body>
 
 </html>
