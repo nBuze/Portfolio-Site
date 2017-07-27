@@ -232,25 +232,43 @@ a.gallery-item-1 {
     color: rgba(78,98,195,0.8);
 }
 
+/* Contact styling */
+
+.contact-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 5%;
+}
+
 div.contact-info, div.contact-form {
-    display: inline-block;
     background: #4E62C3;
     box-shadow: 0 3px 5px rgba(0,0,0,0.5);
     height: 375px;
-    margin-bottom: 60px;
+    margin: 10px;
 }
 
 div.contact-info {
-    width: 325px;
+    width: 350px;
+    order: 1;
 }
 
 div.contact-form {
-    width: 600px;
+    order: 2;
+    width: 650px;
 }
 
 section#contact {
-    padding: 0 40px;
     text-align: center;
+    padding: 0 0 80px;
+}
+
+#contact::after {
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }
 
 footer {
