@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+    overflow-x: hidden;
+}
+
 .side-nav {
     background: #45414D;
     top:0;
@@ -9,7 +13,7 @@
     text-align: center;
     padding-top: 70px;
     z-index: 1000;
-    transition: ease 0.5s;
+    transition: ease 2.5s;
     width: 300px;
 }
 
@@ -52,9 +56,9 @@ ul .main-link:hover {
     margin: 40px auto;
 }
 
-#content-wrap {
+.content-wrap {
     position: relative;
-    transition: ease 2s;
+    transition: ease 2.5s;
     padding: 10px;
     overflow:auto;
 }
