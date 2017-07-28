@@ -41,7 +41,7 @@ ul .main-link:hover {
     background: #4E62C3;
     font-size: 21px;
     padding: 14.5px 10px;
-    transition: background ease 1s;
+    transition: background ease 0.7s;
 }
 
 .separator {
@@ -65,11 +65,22 @@ ul .main-link:hover {
 
 .content {
     font-size: 20px;
-    padding: 30px 10px 0;
+    padding: 0 10px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.2;
 }
 #content-wrap.active {
     left: 300px;
 }
 #sideNavigation.active {
     left: 0;
+    box-shadow: 2px 0 4px;
+}
+
+h2 {
+    font-size: 3.5em;
+    color: #4E62C3;
+    padding: 20px 0 40px;
+    text-align: center;
 }
