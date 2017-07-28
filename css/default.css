@@ -14,8 +14,8 @@
 }
 
 ul {
-    padding 0;
-    margin 0;
+    padding: 0;
+    margin: 0;
 }
 
 ul a {
@@ -41,7 +41,7 @@ ul .main-link:hover {
     background: #4E62C3;
     font-size: 21px;
     padding: 14.5px 10px;
-    transition: background ease 1s;
+    transition: background ease 0.8s;
 }
 
 .separator {
@@ -54,8 +54,9 @@ ul .main-link:hover {
 
 #content-wrap {
     position: relative;
-    transition: left ease 0.5s;
+    transition: ease 2s;
     padding: 10px;
+    overflow:auto;
 }
 
 #menu {
@@ -69,6 +70,7 @@ ul .main-link:hover {
 }
 #content-wrap.active {
     left: 300px;
+    
 }
 #sideNavigation.active {
     left: 0;
