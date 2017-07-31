@@ -317,7 +317,7 @@ textarea.form-content {
     margin-bottom: 15px;
 }
 
-.contact-form small {
+.contact-form label {
     text-align: left;
     font-family: 'Lora', serif;
     font-size: 14px;
@@ -325,7 +325,7 @@ textarea.form-content {
     padding: 8px;
 }
 
-button.send {
+input#send {
     float: right;
     border-radius: 5px;
     height: 35px;
@@ -338,8 +338,7 @@ button.send {
     cursor: pointer;
     border: solid 1px rgba(255, 255, 255, 0.2);
 }
-
-button.send:hover {
+input#send:hover {
     height: 37px;
     width: 122px;
     margin-bottom: 18px;
