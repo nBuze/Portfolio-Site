@@ -13,7 +13,7 @@ body {
     text-align: center;
     padding-top: 70px;
     z-index: 1000;
-    transition: ease 2.5s;
+    transition: all ease 2.5s;
     width: 300px;
 }
 
@@ -45,7 +45,7 @@ ul .main-link:hover {
     background: #4E62C3;
     font-size: 21px;
     padding: 14.5px 10px;
-    transition: background ease 0.8s;
+    transition: all ease 0.8s;
 }
 
 .separator {
@@ -58,9 +58,9 @@ ul .main-link:hover {
 
 .content-wrap {
     position: relative;
-    transition: ease 2.5s;
+    transition: all ease 2.5s;
     padding: 10px;
-    overflow:auto;
+    overflow: auto;
 }
 
 #menu {
