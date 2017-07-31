@@ -243,10 +243,13 @@ a.gallery-item-1 {
 
 div.contact-info, div.contact-form {
     background: #4E62C3;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
     margin: 10px;
     color: white;
     font-family: 'Palatino', serif;
+}
+
+div.contact-info:hover,  div.contact-form:hover{
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
 }
 
 div.contact-info {
@@ -356,7 +359,8 @@ section#contact {
 }
 
 footer {
-    height: 130px;
+    height: 100px;
+
     width: 100%;
     background: url('../img/guitar_cover.jpeg') center center no-repeat;
     background-size: cover;
