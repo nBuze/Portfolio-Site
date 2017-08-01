@@ -13,7 +13,7 @@ body {
     text-align: center;
     padding-top: 70px;
     z-index: 1000;
-    transition: all ease 2.5s;
+    transition: all ease 0.8s;
     width: 300px;
 }
 
@@ -58,9 +58,10 @@ ul .main-link:hover {
 
 .content-wrap {
     position: relative;
-    transition: all ease 2.5s;
+    transition: all ease 0.8s;
     padding: 10px;
     overflow: auto;
+    left: 0;
 }
 
 #menu {
