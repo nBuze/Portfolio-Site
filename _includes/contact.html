@@ -1,0 +1,30 @@
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-main">
+        <div class="contact-info">
+            <h3>Info</h3>
+            <span class="phone">Phone | (phone</span>
+            <span class="email">Email | (email)</span>
+        </div>
+        <div class="contact-form">
+            <h3>Contact Form</h3>
+            <form id="contactForm">
+            <div class="inputs">
+            <div class="form-left">
+                <label for="name">Name</label>
+                <input type="text" id="inputName" name="name" value="">
+                <label for="email">Email</label>
+                <input type="text" id="inputEmail" name="email" value="">
+                <label for="subject">Subject</label>
+                <input type="text" id="inputSubject" name="subject" value="">
+            </div>
+            <div class="form-right">
+                <label for="content">Content</label>
+                <textarea id="inputContent" name="content" rows="" cols="" class="form-content"></textarea>
+                <input id="send" type="button" name="send" onclick="sendEmail();" >Send</input>
+            </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</section>

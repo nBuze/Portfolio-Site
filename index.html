@@ -1,9 +1,11 @@
+---
+---
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
-    <title>Nolan Buzanis</title>
+    <title>N. Buzanis</title>
 
     <!--    CSS Stylesheets       -->
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
@@ -28,119 +30,11 @@
         </div>
     </header>
 
-    <section id="about">
-        <h2>About</h2>
+    {% include about.html %}
 
-        <div class="about-icons">
-            <div class="headshot"></div>
-        </div>
+    {% include gallery.html %}
 
-        <div class="about-content">
-            <p class="objective"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a semper nulla. </strong>In tellus ex, cursus consequat elit id, ullamcorper dapibus urna. Vestibulum lacinia commodo eros sed interdum. Fusce suscipit nisl in lorem consectetur lacinia. Aenean posuere vehicula blandit. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec condimentum eros vitae risus porta, quis hendrerit nunc gravida.
-                <a href="#">Resumé</a>
-            </p>
-        </div>
-    </section>
-    <!-- Skills sections
-<section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-icons">
-            <div class="skill-1"></div>
-            <div class="skill-2"></div>
-            <div class="skill-3"></div>
-            <div class="skill-4"></div>
-            <div class="skill-5"></div>
-            <div class="skill-6"></div>
-        </div>
-    </section>-->
-
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <div class="gallery">
-            <a href="./compass.html" class="gallery-item-1">
-                <div class="thumbnail-cover">
-                    <div class="thumbnail-text">
-                        <h4>Compass</h4>
-                        <p>iOS todo app</p>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="gallery-item-2">
-                <div class="thumbnail-cover">
-                    <div class="thumbnail-text">
-                        <h4>Project 2</h4>
-                        <p>- in progress - </p>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="gallery-item-3">
-                <div class="thumbnail-cover">
-                    <div class="thumbnail-text">
-                        <h4>Project 3</h4>
-                        <p>- in progress - </p>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="gallery-item-4">
-                <div class="thumbnail-cover">
-                    <div class="thumbnail-text">
-                        <h4>Project 4</h4>
-                        <p>- in progress - </p>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="gallery-item-5">
-                <div class="thumbnail-cover">
-                    <div class="thumbnail-text">
-                        <h4>Project 5</h4>
-                        <p>- in progress - </p>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="gallery-item-6">
-                <div class="thumbnail-cover">
-                    <div class="thumbnail-text">
-                        <h4>Project 6</h4>
-                        <p>- in progress - </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="projects-link">
-            <a href="#" class="allprojects">All Projects</a>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-main">
-            <div class="contact-info">
-                <h3>Info</h3>
-                <span class="phone">Phone | (phone)</span>
-                <span class="email">Email | (email)</span>
-            </div>
-            <div class="contact-form">
-                <h3>Contact Form</h3>
-                <form id="contactForm">
-                <div class="inputs">
-                <div class="form-left">
-                    <label for="name">Name</label>
-                    <input type="text" id="inputName" name="name" value="">
-                    <label for="email">Email</label>
-                    <input type="text" id="inputEmail" name="email" value="">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="inputSubject" name="subject" value="">
-                </div>
-                <div class="form-right">
-                    <label for="content">Content</label>
-                    <textarea id="inputContent" name="content" rows="" cols="" class="form-content"></textarea>
-                    <input id="send" type="button" name="send" onclick="sendEmail();" >Send</input>
-                </div>
-                </div>
-                </form>
-            </div>
-        </div>
-    </section>
+    {% include contact.html %}
 
     <footer>
         <ul>
@@ -148,7 +42,7 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </ul>
-        <small>© Copyright 2017 N. Buzanis</small>
+        <small>© Copyright 2017 Nolan Buzanis</small>
     </footer>
 
     <script>
