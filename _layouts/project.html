@@ -8,13 +8,32 @@
     </head>
     <body>
         <header>
+            <nav>
+                <ul>
+                    <a href="../index.html">Home</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#projects">Projects</a>
+                    <a href="../index.html#contact">Contact</a>
+                </ul>
+            </nav>
             <div class="header-title">
                 <h1>{{page.title}}</h1>
                 <span>{{page.subtitle}}</span>
             </div>
         </header>
+
         <div class="content-wrap">
-            <p>{{content}}</p>
+            <div class="text-column">
+                <p>{{content}}</p>
+            </div>
+            <div class="photo-column">
+                <div class="photo-1">
+                </div>
+            </div>
         </div>
+
+        <footer>
+            <span class="copyright">© Copyright 2017 Nolan Buzanis</span>
+        </footer>
     </body>
 </html>
