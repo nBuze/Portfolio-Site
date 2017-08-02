@@ -32,11 +32,12 @@ header ul a {
     display: inline-block;
     padding: 20px 30px 0 0;
     font-variant: none;
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     color: inherit;
     font-family: "Open Sans", sans-serif;
     transition: ease 0.5s;
+    text-transform: uppercase;
 }
 
 header ul a:hover {
