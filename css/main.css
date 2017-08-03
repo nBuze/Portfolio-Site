@@ -250,9 +250,12 @@ div.contact-info, div.contact-form {
     font-family: 'Palatino', serif;
 }
 
+/*
 div.contact-info:hover,  div.contact-form:hover{
     box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
-}
+}*/
+
+
 
 div.contact-info {
     box-sizing: border-box;
@@ -309,7 +312,7 @@ div.inputs {
     background: rgba(255, 255, 255, 0.8);
 }
 
-input:focus, .form-content:focus {
+input:focus, .form-content:focus,  input:hover, .form-content:hover{
     background: white;
 }
 
@@ -327,6 +330,7 @@ textarea.form-content {
     padding: 8px;
 }
 
+
 input#send {
     float: right;
     border-radius: 5px;
@@ -335,15 +339,17 @@ input#send {
     margin-bottom: 20px;
     background: rgba(255, 255, 255, 0.8);
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
     color: rgba(0,0,0,0.7);
     cursor: pointer;
     border: solid 1px rgba(255, 255, 255, 0.2);
+    transition: ease 0.5s;
 }
+
 input#send:hover {
-    height: 37px;
-    width: 122px;
-    margin-bottom: 18px;
+    background: white;
+    color: #4E62C3;
+    font-size: 17px;
 }
 
 section#contact {
@@ -359,9 +365,59 @@ section#contact {
     clear: both;
 }
 
+.contact-icons {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-icons a .fill{
+    fill: black;
+}
+
+.contact-icons a {
+    background: white;
+    border-radius: 10px;
+}
+
+.contact-icons a:hover .fill{
+    fill: white;
+    transition: ease 0.8s;
+}
+
+.github #square-60 {
+    fill:#000000;
+}
+
+.github #github {
+    fill:#ffffff;
+}
+
+a.github:hover #square-60 {
+    fill: white;
+    transition: ease 0.8s;
+}
+
+a.github:hover #github {
+    fill: #4E62C3;
+    transition: ease 0.8s;
+}
+
+.contact-icons a:hover{
+    background: #4E62C3;
+    transition: ease 0.8s;
+}
+
+.contact-icons a svg {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
 footer {
     height: 100px;
-
     width: 100%;
     background: url('../img/guitar_cover.jpeg') center center no-repeat;
     background-size: cover;
@@ -383,10 +439,12 @@ footer ul a{
     text-decoration: none;
     color: inherit;
     font-family: "Open Sans", sans-serif;
+    transition: ease 0.5s;
+    text-transform: uppercase;
 }
 
 footer ul a:hover {
-    color: rgba(0, 0, 0, 0.6);
+    color: #4E62C3;
 }
 
 footer small {
@@ -399,6 +457,7 @@ footer small {
     font-family: 'Palatino', serif;
     font-weight: 300;
 }
+
 @media only screen and (max-width : 940px), only screen and (max-device-width : 940px) {
     a[class^="gallery-item-"] {
         width: 50%;
