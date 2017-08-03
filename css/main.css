@@ -452,10 +452,9 @@ footer small {
     position: relative;
     top: 60%;
     padding: 10px 30px 0 0;
-    font-style: italic;
-    font-size: 18px;
-    font-family: 'Palatino', serif;
+    font-size: 13px;
     font-weight: 300;
+    color: rgba(255,255,255,0.5);
 }
 
 @media only screen and (max-width : 940px), only screen and (max-device-width : 940px) {
