@@ -148,6 +148,24 @@ svg .fill {
     color: rgba(78,98,195,0.8);
 }
 
+#skills {
+    padding: 0 10px 30px;
+}
+
+div.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-icons img {
+    height: 75px;
+}
+div[class^="skill-"] {
+    padding: 10px;
+}
+
 section#projects{
     background-color: #45414D;
     padding: 0;
@@ -254,8 +272,6 @@ div.contact-info, div.contact-form {
 div.contact-info:hover,  div.contact-form:hover{
     box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
 }*/
-
-
 
 div.contact-info {
     box-sizing: border-box;
@@ -466,5 +482,8 @@ footer small {
 @media only screen and (max-width : 480px), only screen and (max-device-width : 480px) {
     a[class^="gallery-item-"] {
         width: 100%;
+    }
+    .skills-icons img {
+        height: 55px;
     }
 }
