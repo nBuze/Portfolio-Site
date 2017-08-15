@@ -391,39 +391,39 @@ section#contact {
 }
 
 .contact-icons a .fill{
-    fill: black;
+    fill: white;
 }
 
 .contact-icons a {
-    background: white;
+    background: #4E62C3;
     border-radius: 10px;
 }
 
 .contact-icons a:hover .fill{
-    fill: white;
+    fill: black;
     transition: ease 0.8s;
 }
 
 .github #square-60 {
-    fill:#000000;
+    fill:white;
 }
 
 .github #github {
-    fill:#ffffff;
+    fill: #4E62C3;
 }
 
 a.github:hover #square-60 {
-    fill: white;
+    fill: black;
     transition: ease 0.8s;
 }
 
 a.github:hover #github {
-    fill: #4E62C3;
+    fill: #ffffff;
     transition: ease 0.8s;
 }
 
 .contact-icons a:hover{
-    background: #4E62C3;
+    background: white;
     transition: ease 0.8s;
 }
 
