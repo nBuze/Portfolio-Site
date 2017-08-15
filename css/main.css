@@ -305,6 +305,19 @@ div.inputs {
     font-size: 18px;
 }
 
+.email a {
+    color: inherit;
+    text-decoration: none;
+    padding-bottom: 10px;
+    transition: ease 0.5s;
+}
+
+.email a:hover {
+    border-bottom: white 2px solid;
+    font-size: 18.8px;
+    padding-bottom: 3px;
+}
+
 .contact-info h3 {
     padding-bottom: 35px;
 }
