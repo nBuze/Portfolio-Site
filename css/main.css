@@ -270,11 +270,6 @@ div.contact-info, div.contact-form {
     font-family: 'Palatino', serif;
 }
 
-/*
-div.contact-info:hover,  div.contact-form:hover{
-    box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
-}*/
-
 div.contact-info {
     box-sizing: border-box;
     width: 350px;
