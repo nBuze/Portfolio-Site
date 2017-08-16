@@ -6,7 +6,7 @@ body {
 h2 {
     font-family: 'Palatino', serif;
     font-variant: small-caps;
-    color: #4E62C3;
+    color: #D7A154;
     font-size: 3em;
     padding: 50px 15px 40px;
     text-align: center;
@@ -17,7 +17,7 @@ h2 {
 header {
     width: 100%;
     height: 100vh;
-    background: url('../img/guitar_cover.jpeg') center center no-repeat;
+    background: url('../img/guy-acoustic-guitar.jpg') center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
     color: white;
@@ -41,7 +41,7 @@ header ul a {
 }
 
 header ul a:hover {
-    color: #4E62C3;
+    color: rgba(75,158,181,1);
 }
 
 header div.header-title {
@@ -180,7 +180,7 @@ div[class^="skill-"] {
 }
 
 section#projects{
-    background-color: #45414D;
+    background-color: #00293B;
     padding: 0;
 }
 
@@ -223,7 +223,7 @@ a.gallery-item-1 {
     color: white;
     text-align: center;
     opacity: 0;
-    background: rgba(78,98,195,0.9);
+    background: rgba(75,158,181,0.9);
 }
 
 .thumbnail-cover:hover {
@@ -277,7 +277,7 @@ a.gallery-item-1 {
 }
 
 div.contact-info, div.contact-form {
-    background: #4E62C3;
+    background: rgba(75,158,181,1);
     margin: 10px;
     color: white;
     font-family: 'Palatino', serif;
@@ -365,7 +365,7 @@ textarea.form-content {
     text-align: left;
     font-family: 'Lora', serif;
     font-size: 14px;
-    color: #4A4A4A;
+    color: #00293B;
     padding: 8px;
 }
 
@@ -375,7 +375,7 @@ input#send {
     height: 35px;
     width: 120px;
     margin-bottom: 20px;
-    background: #4E62C3;
+    background: rgba(75,158,181,1);
     font-weight: 700;
     font-size: 15px;
     color: white;
@@ -386,7 +386,7 @@ input#send {
 
 input#send:hover {
     background: white;
-    color: #4E62C3;
+    color: rgba(75,158,181,1);
     font-size: 17px;
 }
 
@@ -416,12 +416,12 @@ section#contact {
 }
 
 .contact-icons a {
-    background: #4E62C3;
+    background: rgba(75,158,181,1);
     border-radius: 10px;
 }
 
 .contact-icons a:hover .fill{
-    fill: #45414D;
+    fill: #00293B;
     transition: ease 0.8s;
 }
 
@@ -430,16 +430,16 @@ section#contact {
 }
 
 .github #github {
-    fill: #4E62C3;
+    fill: rgba(75,158,181,1);
 }
 
 a.github:hover #square-60 {
-    fill: #45414D;
+    fill: #00293B;
     transition: ease 0.8s;
 }
 
 a.github:hover #github {
-    fill: #ffffff;
+    fill: white;
     transition: ease 0.8s;
 }
 
@@ -457,7 +457,7 @@ a.github:hover #github {
 footer {
     height: 100px;
     width: 100%;
-    background: url('../img/guitar_cover.jpeg') center center no-repeat;
+    background: url('../img/guy-acoustic-guitar.jpg') center center no-repeat;
     background-size: cover;
     color: white;
 }
@@ -482,7 +482,7 @@ footer ul a{
 }
 
 footer ul a:hover {
-    color: #4E62C3;
+    color: rgba(75,158,181,1);
 }
 
 footer small {
