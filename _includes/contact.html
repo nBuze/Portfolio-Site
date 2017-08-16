@@ -106,7 +106,7 @@
 
         <div class="contact-form">
             <h3>Contact Form</h3>
-            <form id="contactForm" action="https://formspree.io/nolanbuzanis@gmail.com" method="POST">
+            <form id="contactForm" action="https://formspree.io/nolanbuzanis@gmail.com" method="POST" onsubmit="return validateForm()">
             <div class="inputs">
             <div class="form-left">
                 <label for="name">Name</label>
@@ -119,7 +119,7 @@
             <div class="form-right">
                 <label for="content">Message</label>
                 <textarea id="inputContent" name="content" rows="" cols="" class="form-content"></textarea>
-                <input id="send" type="submit" name="Message" onclick="sendEmail();"  value="Send">
+                <input id="send" type="submit" name="Message"  value="Send">
             </div>
             </div>
             </form>

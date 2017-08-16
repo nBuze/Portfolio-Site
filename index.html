@@ -63,23 +63,20 @@ project-sub-6: in progress
 
     <script>
 
-/*
-function sendEmail() {
+function validateForm() {
 
         var name = document.getElementById('inputName').value,
-            email = document.getElementById('inputEmail').innerHTML,
-            subject = document.getElementById('inputSubject').innertext,
+            email = document.getElementById('inputEmail').value,
+            subject = document.getElementById('inputSubject').value,
             content = document.getElementById('inputContent').value;
 
         if (!name || !email || !subject || !content) {
-            console.log('Invalid entry');
-        }
-        else {
-            console.log('Values saved!');
+            alert("Invalid entry, please fill out all fields and resubmit.");
+            return false;
         }
 
     }
-    */
+
     </script>
 </body>
 
