@@ -136,10 +136,21 @@ svg .fill {
     font-weight: 700;
 }
 
-.objective a {
+.objective .resume-container::after {
+    content: "";
+    visibility: hidden;
     display: block;
+    height: 0;
+    clear: both;
+}
+
+.objective a {
+    display: inline;
+    position: relative;
+    float: right;
     color: #4E62C3;
     text-decoration: underline;
+    margin-top: 20px;
     font-weight: 700;
     font-size: 20px;
     padding: 20px 10px 0 0;
