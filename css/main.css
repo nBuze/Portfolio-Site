@@ -194,6 +194,7 @@ section#projects{
 .gallery {
     width: 100%;
     margin: 15px auto 0;
+    padding: 50px 0;
 }
 
 /* An anchor tag with a attribute that starts with..*/
@@ -212,6 +213,15 @@ a.gallery-item-1 {
     background: url('../img/laptopandtablet.jpg') center center no-repeat;
     background-size: cover;
 }
+a.gallery-item-2 {
+    background: url('../img/arduino-pedal.jpg') center center no-repeat;
+    background-size: cover;
+}
+a.gallery-item-3 {
+    background: url('../img/todo-app.png') center center no-repeat;
+    background-size: cover;
+}
+
 .gallery::after {
     content: "";
     visibility: hidden;
@@ -505,6 +515,9 @@ footer small {
 @media only screen and (max-width : 940px), only screen and (max-device-width : 940px) {
     a[class^="gallery-item-"] {
         width: 50%;
+    }
+    a[class^="gallery-item-"]:last-of-type{
+        width: 100%;
     }
 }
 
