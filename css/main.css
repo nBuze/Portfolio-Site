@@ -294,15 +294,14 @@ a.gallery-item-3 {
 }
 
 div.contact-info, div.contact-form {
-    background: rgba(75,158,181,1);
     margin: 10px;
-    color: white;
+    color: rgba(75,158,181,1);
     font-family: 'Palatino', serif;
 }
 
 div.contact-info {
     box-sizing: border-box;
-    width: 350px;
+    width: 80%;
     order: 1;
 }
 
@@ -327,7 +326,7 @@ div.inputs {
 .contact-info span {
     display: block;
     padding: 15px 10px;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 .email a {
@@ -338,8 +337,8 @@ div.inputs {
 }
 
 .email a:hover {
-    border-bottom: white 2px solid;
-    font-size: 18.8px;
+    border-bottom: rgba(75,158,181,1) 2px solid;
+    font-size: 28px;
     padding-bottom: 3px;
 }
 
@@ -421,9 +420,7 @@ section#contact {
 }
 
 .contact-icons {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    padding: 20px;
+    padding: 40px 30% 20px;
     display: flex;
     justify-content: space-around;
 }
@@ -443,7 +440,7 @@ section#contact {
 }
 
 .github #square-60 {
-    fill:white;
+    fill: white;
 }
 
 .github #github {
@@ -463,12 +460,18 @@ a.github:hover #github {
 .contact-icons a:hover{
     background: white;
     transition: ease 0.8s;
+    border: solid #00293B 1px;
+}
+
+.contact-icons a {
+    border: solid rgba(75,158,181,1) 1px;
+    border-radius: 7px;
 }
 
 .contact-icons a svg {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 
 footer {
