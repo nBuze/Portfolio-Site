@@ -95,7 +95,9 @@ div.headshot {
     height: 180px;
     border-radius: 90px;
     order: 3;
-    background: url('../img/headshot.png') right top no-repeat;
+    /*     background: url('../img/headshot.png') right top no-repeat;    */
+    background-color: white;
+    border: solid #00293B 2px;
     background-size: cover;
 }
 
