@@ -97,7 +97,7 @@ div.headshot {
     order: 3;
     /*     background: url('../img/headshot.png') right top no-repeat;    */
     background-color: white;
-    border: solid #00293B 2px;
+    border: solid rgba(75,158,181,1) 2px;
     background-size: cover;
 }
 
@@ -150,17 +150,18 @@ svg .fill {
     display: inline;
     position: relative;
     float: right;
-    color: #4E62C3;
+    color: #00293B;
     text-decoration: underline;
     margin-top: 20px;
     font-weight: 700;
     font-size: 20px;
     padding: 20px 10px 0 0;
     text-align: right;
+    transition: ease 0.5s;
 }
 
 .objective a:hover {
-    color: rgba(78,98,195,0.8);
+    color: rgba(75,158,181,1);
 }
 
 #skills {

@@ -28,7 +28,7 @@ header nav ul a{
 }
 
 header nav ul a:hover {
-    color: rgba(78,98,195,0.8);
+    color: rgba(75,158,181,1);
     transition: ease 0.3s;
 }
 
@@ -109,7 +109,7 @@ footer {
     left: 0;
     right: 0;
     display: block;
-    background: #45414D;
+    background: #00293B;
     padding: 15px 0 15px 120px;
 }
 .copyright {
