@@ -515,6 +515,10 @@ footer small {
     color: rgba(255,255,255,0.5);
 }
 
+.inactivelink {
+   cursor: default;
+}
+
 @media only screen and (max-width : 940px), only screen and (max-device-width : 940px) {
     a[class^="gallery-item-"] {
         width: 50%;
