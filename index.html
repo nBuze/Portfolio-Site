@@ -28,12 +28,50 @@ project-sub-3: A new type of networking (in progress)
 </head>
 
 <body>
+    <div class="side-nav" id="sideNavigation">
+        <ul>
+            <a class="main-link" href="#about">About</a>
+            <a class="main-link" href="#projects">All Projects</a>
+            <div class="separator"></div>
+            <a href="../projects/portfolio-website.html">{{page.project-title-1}}</a>
+            <a href="#" class="innactivelink">{{page.project-title-2}}</a>
+            <a href="#" class="innactivelink">{{page.project-title-3}}</a>
+        </ul>
+    </div>
+
+    <div class="content-wrap" id="content-wrap">
+        <a href="#" id="fullpageLink" class="fullpageLink" onclick="toggleNav()"></a>
     <header>
         <ul>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </ul>
+        <nav class="buttonNav" id="buttonNav">
+            <a id="menuButton" href="#" onclick="toggleNav()">
+                <svg id="menu" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <g>
+                	<g>
+                		<path class="fill" d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636
+                			c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z"/>
+                	</g>
+                </g>
+                <g>
+                	<g>
+                		<path class="fill" d="M491.318,78.439H20.682C9.26,78.439,0,87.699,0,99.121c0,11.422,9.26,20.682,20.682,20.682h470.636
+                			c11.423,0,20.682-9.26,20.682-20.682C512,87.699,502.741,78.439,491.318,78.439z"/>
+                	</g>
+                </g>
+                <g>
+                	<g>
+                		<path class="fill" d="M491.318,392.197H20.682C9.26,392.197,0,401.456,0,412.879s9.26,20.682,20.682,20.682h470.636
+                			c11.423,0,20.682-9.259,20.682-20.682S502.741,392.197,491.318,392.197z"/>
+                	</g>
+                </g>
+                </svg>
+            </a>
+        </nav>
         <div class="header-title">
             <h1>Nolan Buzanis</h1>
             <p>Engineer | Programmer | Developer</p>
@@ -54,6 +92,16 @@ project-sub-3: A new type of networking (in progress)
         </ul>
         <small>© Copyright 2017 Nolan Buzanis</small>
     </footer>
+
+</div>
+
+<script>
+    function toggleNav() {
+        document.getElementById('sideNavigation').classList.toggle('active');
+        document.getElementById('content-wrap').classList.toggle('active');
+        document.getElementById('fullpageLink').classList.toggle('active')
+    }
+</script>
 
 </body>
 

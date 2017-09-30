@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Lora', serif;
+    overflow-x: hidden;
 }
 h2 {
     font-family: 'Palatino', serif;
@@ -15,6 +16,7 @@ h2 {
 }
 
 header {
+    position: relative;
     width: 100%;
     height: 100vh;
     background: url('../img/guy-acoustic-guitar.jpg') center center no-repeat;
@@ -46,7 +48,7 @@ header ul a:hover {
 
 header div.header-title {
     position: absolute;
-    width: 100%;
+    width: 99%;
     margin: auto;
     top: 62%;
     text-align: center;
@@ -55,6 +57,7 @@ header div.header-title {
 }
 
 header div h1 {
+    display: block;
     font-size: 50px;
     font-weight: 700;
     padding-bottom: 10px;
@@ -519,6 +522,86 @@ footer small {
    cursor: default;
 }
 
+/* Button navigation for iPads and iPhones */
+
+#menu {
+    float: right;
+    width: 0px;
+    height: 30px;
+    margin: 10px;
+    z-index: 2;
+}
+
+#menu .fill {
+    fill: white;
+}
+
+.side-nav {
+    background: #45414D;
+    top: 0;
+    bottom: 0;
+    right: -300px;
+    position: fixed;
+    text-align: center;
+    padding-top: 70px;
+    z-index: 1000;
+    transition: all ease 0.8s;
+    width: 0;
+}
+
+.side-nav ul a {
+    color: rgba(255,255,255,0.8);
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    padding: 15px 0;
+}
+
+ul .main-link {
+    font-size: 24px;
+    padding: 20px 10px;
+}
+
+ul .main-link:hover {
+    font-size: 26px;
+    padding: 19px 10px;
+}
+
+ .side-nav ul a:hover {
+    color: rgba(255,255,255,1);
+    background: #4E62C3;
+    font-size: 21px;
+    padding: 14.5px 10px;
+    transition: all ease 0.8s;
+}
+
+.separator {
+    display: block;
+    background: white;
+    width: 75%;
+    height: 2px;
+    margin: 40px auto;
+}
+
+.content-wrap {
+    position: relative;
+    transition: all ease 0.8s;
+    overflow: auto;
+    left: 0;
+}
+
+.fullpageLink {
+    display: block;
+    position: fixed;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    background: #45414D;
+    opacity: 0.5;
+}
+
+
+
 @media only screen and (max-width : 940px), only screen and (max-device-width : 940px) {
     a[class^="gallery-item-"] {
         width: 50%;
@@ -526,6 +609,27 @@ footer small {
     a[class^="gallery-item-"]:last-of-type{
         width: 100%;
     }
+    header ul {
+        width: 0px;
+    }
+    #menu {
+        width: 30px;
+    }
+    .side-nav {
+        width: 300px;
+    }
+    #content-wrap.active {
+        margin-right: 300px;
+    }
+    #sideNavigation.active {
+        right: 0;
+        box-shadow: 2px 0 4px;
+    }
+    a.active {
+        width: 100%;
+        height: 100vh;
+    }
+
 }
 
 @media only screen and (max-width : 480px), only screen and (max-device-width : 480px) {
