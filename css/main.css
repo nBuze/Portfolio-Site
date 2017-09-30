@@ -608,7 +608,7 @@ ul .main-link:hover {
         width: 100%;
     }
     header ul {
-        width: 0px;
+        display: none;
     }
     #menu {
         width: 30px;
