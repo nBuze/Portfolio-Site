@@ -537,7 +537,7 @@ footer small {
 }
 
 .side-nav {
-    background: #45414D;
+    background: #5C5154;
     top: 0;
     bottom: 0;
     right: -300px;
@@ -569,7 +569,7 @@ ul .main-link:hover {
 
  .side-nav ul a:hover {
     color: rgba(255,255,255,1);
-    background: #4E62C3;
+    background: rgba(75,158,181,1);
     font-size: 21px;
     padding: 14.5px 10px;
     transition: all ease 0.8s;
@@ -599,8 +599,6 @@ ul .main-link:hover {
     background: #45414D;
     opacity: 0.5;
 }
-
-
 
 @media only screen and (max-width : 940px), only screen and (max-device-width : 940px) {
     a[class^="gallery-item-"] {
