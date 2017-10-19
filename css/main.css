@@ -618,7 +618,8 @@ ul .main-link:hover {
         width: 300px;
     }
     #content-wrap.active {
-        margin-right: 300px;
+        left: -300px;
+        overflow: hidden;
     }
     #sideNavigation.active {
         right: 0;
@@ -635,7 +636,6 @@ ul .main-link:hover {
     .contact-icons a {
         margin: 10px;
     }
-
 }
 
 @media only screen and (max-width : 480px), only screen and (max-device-width : 480px) {
