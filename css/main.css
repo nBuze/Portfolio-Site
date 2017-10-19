@@ -601,6 +601,13 @@ ul .main-link:hover {
     opacity: 0.5;
 }
 
+a[href^="tel:"] {
+    pointer-events: none;
+   cursor: default;
+	text-decoration: none;
+    color: inherit;
+}
+
 @media only screen and (max-width : 940px), only screen and (max-device-width : 940px) {
     a[class^="gallery-item-"] {
         width: 50%;
@@ -635,6 +642,10 @@ ul .main-link:hover {
 
     .contact-icons a {
         margin: 10px;
+    }
+    a[href^="tel:"] {
+        pointer-events: auto;
+       cursor: auto;
     }
 }
 
@@ -700,5 +711,9 @@ ul .main-link:hover {
     header {
     background: url('../img/guy-accoustic-guitar-small.jpg') center center no-repeat;
     height: 425px;
+    }
+    a[href^="tel:"] {
+        pointer-events: auto;
+       cursor: auto;
     }
 }
