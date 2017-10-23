@@ -2,7 +2,12 @@
 
 header {
     position: relative;
-    background: url('../img/laptopandtablet.jpg') center center;
+    background: url('../img/mac-coding.jpeg') center center;
+        background:
+            linear-gradient(
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.7)
+                )
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
