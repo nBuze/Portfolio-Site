@@ -4,4 +4,38 @@ title: Eco Grow Module
 subtitle: Self-assisted growing module for urban agriculture.
 css: ecogrow.project
 ---
-The EcoGrow module assists users with growing fresh fruits and vegetables through an Arduino based monitoring system. The module is an enclosed insulated system which monitors a plant’s humidity, temperature, and light levels. Readings from the HTU21D humidity and temperature sensor, and the photodiode are outputted to an LCD which can be read by the user. The water control mechanism is controlled using a position servo motor, in which signals sent to the motor results in the movement of a rubber stopper, controlling the flow of water to the plant. To ensure reliability of the system, each subsystem was thoroughly tested individually with the Arduino Serial Monitor before being joined to the housing unit.
+
+<h2>Overview</h2>
+<p>The EcoGrow module assists users with growing fresh fruits and vegetables through an Arduino based monitoring system. The module is an enclosed insulated system which monitors a plant’s humidity, temperature, and light levels. Readings from the HTU21D humidity and temperature sensor, and the photodiode are outputted to an LCD which can be read by the user. The water control mechanism is controlled using a position servo motor, in which signals sent to the motor results in the movement of a rubber stopper, controlling the flow of water to the plant. To ensure reliability of the system, each subsystem was thoroughly tested individually with the Arduino Serial Monitor before being joined to the housing unit.</p>
+
+<div class="photocontainer">
+    <div class="photo-1">
+</div>
+</div>
+
+<h2>How it works</h2>
+<p>The EcoGrow uses and Arduino Uno microcontroller to monitor plant growth through two systems. These two systems are the sensing system and the water displacement system.</p>
+
+<p>The sensing system utilized three sensors, a humidity sensor, a temperature sensor and a photocell. The HTU21D sensor was used to measure the ambient humidity inside the grow chamber. The HTU21D sensor was used to measure the ambient temperature of the air as well. The photocell was used measured the light emitted within the grow chamber. The sensors were interfaced to the Arduino Uno and displayed on liquid crystal display fastened outside of the grow chamber.</p>
+
+<p>The water displacement system consisted of a button, a servo motor, a rubber stopper, a custom 3D printed piece, a wood rod and water bottle. The water bottle was fitted to a hole in the roof of the chamber with hot glue. The wood rod was attached to the servo motor at one end and the 3D printed piece at the other. The 3D printed part is then secured to the rubber stopper with glue. The custom part was made to ensure that even pressure was applied to the edge the rubber stopper. The servo motor applies pressure to the rubber stopper to seal the water bottle by applying a force down the wood rod. When the button is pressed, the servo motor increases its position and releases pressure from the rubber stopper. This allows for the user to control water flow into the system based on the sensor readings.
+</p>
+
+<div class="photocontainer">
+    <div class="photo-2">
+</div>
+<div class="photo-3">
+</div>
+</div>
+
+<h2>Reliability</h2>
+<p>The ability of multiple subsystems to run off of one Arduino Uno was the main concern in terms of reliability. To ensure this, each subsystem was designed, properly wired, and thoroughly tested independent of each other. The humidity, temperature, and LCD subsystem was tested individually in a variety of conditions to confirm the validity of the design. The LCD was used to display the sensor outputs, alerting the user if there was an issue in sensor readings. </p>
+
+<p>The water control system was especially important since if unreliable, would have the potential to damage the rest of the system. Using a mechanically controlled rubber plug as the water control system presented several unique challenges. It was necessary that the rubber plug seal was applied equally to all sides of the bottleneck so there was no leakage. To remedy this problem, a custom 3D printed part was manufactured to fit in between the straight rod and the stopper, allowing the force to be exerted on the center of the plug. </p>
+
+<p>Depending on the water level in the container, varying degrees of pressure would be exerted upon the bottleneck. A large amount of water placed a concerning amount of pressure on the stopper so this outcome was tested repeatedly. When testing the water control system, the angle of the servo motor at which no water is released into the system needed to be found, even under extreme conditions. Only once it was certain that the water control system could consistently seal the water container was it integrated into the overall system.</p>
+
+<p>A reliability issue arose while using the HTU21D and photodiode sensors. When using the HTU21D sensor, minor shifting of the wires would disconnect the sensor from the rest of the circuit. The temperature and humidity readings on the LCD would display a 998 error, presuming improper connections. To improve the robustness of this subsystem, multiple humidity sensors and independent temperature sensors should be used.</p>
+
+<p>To improve the long-term reliability of the system, several approaches were considered. The servo motor and other sensors should be tested on a regular basis, and replaced if necessary. Additionally, the water container should be composed of a dense plastic and fastened securely to inside of the housing unit.
+</p>

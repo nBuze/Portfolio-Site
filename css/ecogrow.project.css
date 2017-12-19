@@ -59,23 +59,8 @@ header nav ul a:hover {
     float: left;
 }
 
-
-
 .content-wrap {
-    padding: 40px 40px 20px 120px;
-}
-
-.text-column {
-    float: left;
-    width: 40%;
-    min-width: 225px;
-}
-
-.photo-column {
-    float: left;
-    width: 56%;
-    min-width: 400px;
-    padding: 0 0 0 30px;
+    padding: 40px 120px 20px 120px;
 }
 
 h2  {
@@ -84,12 +69,12 @@ h2  {
     font-variant: small-caps;
     font-weight: 700;
     color: rgba(0,0,0,0.8);
-    padding-bottom: 15px 0;
+    padding: 15px 0;
     font-family: 'Palatino';
 }
 
 p {
-    padding-top: 10px;
+    padding: 10px 0;
     display: block;
     font-size: 17px;
     line-height: 30px;
@@ -98,28 +83,40 @@ p {
     min-width: 300px;
 }
 
-.photo-1 {
-    display: block;
-    width: 100%;
-    height: 400px;
-    background: url('../img/ecogrow-office.jpg') center center no-repeat;
-    background-size: cover;
+.photocontainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
+div[class^="photo-"] {
+    text-align: center;
+    width: 45%;
+    min-width: 300px;
+    align-content: space-around;
+    justify-content: space-around;
+    height: 300px;
+    margin: 20px auto;
+    background-size: cover;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.photo-1 {
+    background: url('../img/ecogrow-office.jpg') center center no-repeat;
+    width: 60% !important;
+}
+.photo-2 {
+    background: url('../img/ecogrow.jpg') center center no-repeat;
+}
+.photo-3 {
+    background: url('../img/ecogrow-office.jpg') center center no-repeat;
+}
+
 
 @media only screen and (max-width : 910px), only screen and (max-device-width : 910px) {
-    .text-column {
-        width: 80%;
-        margin: auto;
-    }
-
-    .photo-column {
-        width: 80%;
-        margin: auto;
-        padding-left: 0;
-        padding-top: 30px;
+    .content-wrap {
+        padding: 40px 70px 20px 70px;
     }
 }
-
 footer {
     position: relative;
     bottom: 0;
@@ -129,6 +126,7 @@ footer {
     background: #00293B;
     padding: 15px 0 15px 120px;
 }
+
 .copyright {
     font-size: 13px;
     font-weight: 300;
@@ -141,4 +139,20 @@ footer {
     display: table;
     height: 0;
     clear: both;
+}
+
+
+@media only screen and (max-width : 480px), only screen and (max-device-width : 480px) {
+    .content-wrap {
+        padding: 40px 20px 20px 20px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
 }
