@@ -23,11 +23,8 @@ header nav ul{
 }
 
 nav.visible {
-    background-color: rgb(255,255,255);
+    background-color: #00293B;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
-}
-nav.visible ul a {
-    color: rgba(0,0,0,0.7);
 }
 
 header nav ul a{
@@ -64,11 +61,13 @@ header nav ul a:hover {
     border-bottom: solid rgba(255,255,255,0.8) 2px;
     padding-bottom: 5px;
     float: left;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 .header-title span {
     font-size: 20px;
     padding: 30px 0 0 0;
     float: left;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
 .content-wrap {
@@ -90,7 +89,7 @@ p {
     display: block;
     font-size: 17px;
     line-height: 30px;
-    color: rgba(0,0,0,0.6);
+    color: rgba(0,0,0,0.7);
     font-family: 'Open Sans';
     min-width: 300px;
 }
@@ -117,10 +116,10 @@ div[class^="photo-"] {
     width: 60% !important;
 }
 .photo-2 {
-    background: url('../img/ecogrow.jpg') center center no-repeat;
+    background: url('../img/ecogrow-light.jpg') center center no-repeat;
 }
 .photo-3 {
-    background: url('../img/ecogrow-office.jpg') center center no-repeat;
+    background: url('../img/ecogrow-wiring.jpg') center center no-repeat;
 }
 
 
