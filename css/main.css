@@ -220,11 +220,12 @@ a.gallery-item-1 {
     background-size: cover;
 }
 a.gallery-item-2 {
-    background: url('../img/arduino-pedal.jpg') center center no-repeat;
+    background: url('../img/pottedplant.jpeg') center center no-repeat;
+    image-orientation: 90deg;
     background-size: cover;
 }
 a.gallery-item-3 {
-    background: url('../img/todo-app.png') center center no-repeat;
+    background: url('../img/arduino-pedal.jpg') center center no-repeat;
     background-size: cover;
 }
 
