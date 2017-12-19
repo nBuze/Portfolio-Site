@@ -10,7 +10,7 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav id="navbar">
                 <ul>
                     <a href="../index.html">Home</a>
                     <a href="../index.html#about">About</a>
@@ -33,5 +33,19 @@
         <footer>
             <span class="copyright">© Copyright 2017 Nolan Buzanis</span>
         </footer>
+
+        <script type="text/javascript">
+            window.onscroll = function () {navScroll()};
+
+            function navScroll() {
+                if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+                    document.getElementById('navbar').classList.add("visible");
+                } else {
+                    document.getElementById('navbar').classList.remove("visible");
+                }
+
+            };
+
+        </script>
     </body>
 </html>
