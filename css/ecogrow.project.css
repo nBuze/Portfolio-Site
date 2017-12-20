@@ -93,7 +93,7 @@ p {
     font-family: 'Open Sans';
     min-width: 300px;
 }
-span {
+.center {
     font-style: italic;
     text-align: center;
 }
