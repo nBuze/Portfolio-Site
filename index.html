@@ -28,7 +28,7 @@ project-sub-3: electronics project (in progress)
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body onload="adjustMobile()">
     <div class="side-nav" id="sideNavigation">
         <ul>
             <a class="main-link" href="#about">About</a>
@@ -101,7 +101,20 @@ project-sub-3: electronics project (in progress)
         document.getElementById('sideNavigation').classList.toggle('active');
         document.getElementById('content-wrap').classList.toggle('active');
         document.getElementById('fullpageLink').classList.toggle('active')
-    }
+    };
+
+    function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
+
+function adjustMobile() {
+    var mobile = isMobileDevice();
+    if (mobile) {
+        document.getElementByClassName('thumbnail-cover').classList.add('hidden');
+        document.getElementByClassName('thumbnail-text').classList.add('mobiletext');
+            }
+        };
+
 </script>
 
 </body>

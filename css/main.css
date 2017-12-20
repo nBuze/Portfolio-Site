@@ -250,6 +250,11 @@ a.gallery-item-3 {
     background: rgba(75,158,181,0.9);
 }
 
+.hidden {
+    background-color: rgba(255,255,255,0.1)!important;
+    opacity: 1 !important;
+}
+
 .thumbnail-cover:hover {
     opacity: 1;
     transition: 0.7s ease;
@@ -271,6 +276,9 @@ a.gallery-item-3 {
 .thumbnail-text p {
     font-weight: 300;
     font-size: 20px;
+}
+.mobiletext {
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
 .projects-link {
