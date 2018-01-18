@@ -2,8 +2,8 @@
 
 header {
     position: relative;
-    background: url('../img/spackler-cover.png') center center;
-    background-color: grey;
+    /*background: url('../img/spackler-cover.png') center center;*/
+    background-color: #00293B;
 
     background-size: cover;
     background-attachment: fixed;
