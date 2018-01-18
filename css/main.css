@@ -208,9 +208,7 @@ a[class^="gallery-item-"] {
     display: block;
     width: 33.33%;
     height: 300px;
-
     background: rgba(255,255,255,0);
-
     float: left;
     position: relative;
 }
@@ -226,6 +224,11 @@ a.gallery-item-2 {
 }
 a.gallery-item-3 {
     background: url('../img/arduino-pedal.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+a.gallery-item-4 {
+    background: url('../img/299_robot.png') center center no-repeat;
     background-size: cover;
 }
 
@@ -621,7 +624,7 @@ a[href^="tel:"] {
     a[class^="gallery-item-"] {
         width: 50%;
     }
-    a[class^="gallery-item-"]:last-of-type{
+    div.gallery:nth-last-child(1):nth-child(odd) {
         width: 100%;
     }
     header ul {
