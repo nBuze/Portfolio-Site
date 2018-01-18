@@ -4,7 +4,6 @@ header {
     position: relative;
     /*background: url('../img/299_robot.png') center center;*/
     background-color: #00293B;
-
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -94,6 +93,10 @@ p {
     font-family: 'Open Sans';
     min-width: 300px;
 }
+.center {
+    font-style: italic;
+    text-align: center;
+}
 
 .photocontainer {
     position: relative;
@@ -113,7 +116,7 @@ div[class^="photo-"] {
 }
 
 .photo-1 {
-    background: url('../img/css-code.png') center center no-repeat;
+    background: url('../img/ecogrow-office.jpg') center center no-repeat;
     width: 60% !important;
 }
 .photo-2 {
