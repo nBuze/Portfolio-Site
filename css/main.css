@@ -223,14 +223,14 @@ a.gallery-item-2 {
     background-size: cover;
 }
 a.gallery-item-3 {
+    background: url('../img/299_robot.png') center center no-repeat;
+    background-size: cover;
+}
+a.gallery-item-4 {
     background: url('../img/spackler-board.png') center center no-repeat;
     background-size: cover;
 }
 
-a.gallery-item-4 {
-    background: url('../img/299_robot.png') center center no-repeat;
-    background-size: cover;
-}
 
 .gallery::after {
     content: "";
