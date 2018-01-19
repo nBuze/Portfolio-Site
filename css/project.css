@@ -2,8 +2,7 @@
 
 header {
     position: relative;
-    background: url('../img/pottedplant-large.jpeg') center center;
-
+    background-color: #00293B;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -92,6 +91,8 @@ p {
     color: rgba(0,0,0,0.7);
     font-family: 'Open Sans';
     min-width: 300px;
+    max-width: 900px;
+    margin: auto;
 }
 .center {
     font-style: italic;
@@ -102,6 +103,8 @@ p {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    max-width: 900px;
+    margin:auto;
 }
 div[class^="photo-"] {
     text-align: center;
@@ -116,14 +119,14 @@ div[class^="photo-"] {
 }
 
 .photo-1 {
-    background: url('../img/ecogrow-office.jpg') center center no-repeat;
+    background-color: black;
     width: 60% !important;
 }
 .photo-2 {
-    background: url('../img/ecogrow-light.jpg') center center no-repeat;
+    background-color: black;
 }
 .photo-3 {
-    background: url('../img/ecogrow-wiring.jpg') center center no-repeat;
+    background-color: black;
 }
 
 

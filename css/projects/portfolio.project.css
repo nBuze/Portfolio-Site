@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+header {
+    background: url('/img/mac-coding.jpeg') center center;
+}
+
+.photo-1 {
+    background: url('/img/css-code.png') center center no-repeat;
+}

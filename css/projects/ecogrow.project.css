@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+header {
+    background: url('/img/pottedplant-large.jpeg') center center;
+}
+
+.photo-1 {
+    background: url('/img/ecogrow-office.jpg') center center no-repeat;
+}
+.photo-2 {
+    background: url('/img/ecogrow-light.jpg') center center no-repeat;
+}
+.photo-3 {
+    background: url('/img/ecogrow-wiring.jpg') center center no-repeat;
+}
