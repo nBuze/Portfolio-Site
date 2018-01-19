@@ -4,6 +4,13 @@ header {
     background: url('/img/mac-coding.jpeg') center center;
 }
 
+.header-title h1 {
+    text-shadow: 1px 1px 4px rgba(0,0,0,1);
+}
+.header-title span {
+    text-shadow: 1px 1px 4px rgba(0,0,0,1);
+}
+
 .photo-1 {
     background: url('/img/css-code.png') center center no-repeat;
 }
