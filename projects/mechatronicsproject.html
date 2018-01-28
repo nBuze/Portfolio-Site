@@ -8,3 +8,26 @@ css: robot.project
 
 <p class="center">A collaboraton with Nick Guida and Miguel Martins.</p>
 <p class="link"><a href="https://github.com/nBuze/Mechatronics-Project" target="_blank">GitHub Repo</a></p>
+
+<h2>Overview</h2>
+
+<p>This project is based on programming a 2-wheel robot to autonomously navigate a playfield and compete against other bots in a goal-scoring competition. Various aspects of electrical and computer engineering were explored including: hardware and software interfacing, DC motor control, servo motor positioning, and electronic interfacing of LED's, switches, resistors, capacitors, and chips. We also tinkered with various battery power supplies, infrared sensing and communication, and basic wireless communication using Bluetooth. </p>
+
+<div class="photocontainer">
+    <div class="photo-1">
+</div>
+</div>
+<p>The playfield is made up of 3 infrared beacons ('0', '1', and '2') to help guide the robot, black tape for navigation, and a "goal". Balls are placed the ledge beneath one of the beacons in a random order, and the infrared beacon is then activated above it. The robot must navigate to the beacon, pick up the ball from the ledge, and place the ball in the goal to score a point. The object of the competition was to score the most goals in a 2-minute interval. </p>
+
+<h2>Design</h2>
+
+<p>A photograph of the competed robot is shown below. The bot has two independent DC motors, a mechanical arm with 3 servo motors controlling a 3DOF gripper setup, an Arduino board with I/O shield attached, and several sensors position determination and navigation. </p>
+
+<div class="photocontainer">
+    <div class="photo-2">
+</div>
+<div class="photo-3">
+</div>
+</div>
+
+<p>An explanation of the robot's programming and design is provided below to understand how our robot functions. At the core, the program is a simple line follower function which uses the robot's ambient light sensors to detect if it is centered around a black line while driving forward. The left and right motor speeds are adjusted by a factor, DELTA, depending on what the sensors detect and is the most reliable way of moving around the arena. Implemented in our program as well is a gripper function, used to close the robot's gripper until a ball is detected in its grip. The gripping motion is smooth and uses a pressure sensor to detect the ball. Once the ball is detected, the function stops closing the grip to preserve the gripper motor. Other movement functions included the pivot function where the robot initializes a turn in the right or left direction and stops only when it hits a black line. Our initial pivot function which was calibrated to turn at predefined speed for a predefined amount of time needed to be changed due to its unreliability when battery levels changed. To control which ball to go toward, our robot uses IR sensors to receive a '1', '2', or '0' from an IR transceiver. Since this method of communication was found to be very unreliable, an extra IR receiver was added to the top of our robot.</p>

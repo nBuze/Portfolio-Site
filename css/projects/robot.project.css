@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+header {
+    background: url('/img/299_kit.png') center center;
+}
+
+.photo-1 {
+    background: url('/img/299_course.png') center center no-repeat;
+}
+.photo-2 {
+    background: url('/img/299_robot.png') center center no-repeat;
+}
+.photo-3 {
+    background: url('/img/299_arm.png') center center no-repeat;
+}
