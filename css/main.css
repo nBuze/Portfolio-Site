@@ -440,7 +440,7 @@ input#send:hover {
 
 section#contact {
     text-align: center;
-    padding: 0 0 80px;
+    padding: 0 0 40px;
 }
 
 #contact::after {
@@ -668,6 +668,9 @@ a[href^="tel:"] {
         pointer-events: auto;
        cursor: auto;
     }
+    .contact-icons {
+        padding: 20px 30% 20px;
+    }
 }
 
 @media only screen and (max-width : 480px), only screen and (max-device-width : 480px) {
@@ -736,5 +739,8 @@ a[href^="tel:"] {
     a[href^="tel:"] {
         pointer-events: auto;
        cursor: auto;
+    }
+    .contact-icons {
+        padding: 20px 20% 20px;
     }
 }
