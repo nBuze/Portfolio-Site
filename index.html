@@ -34,25 +34,27 @@ project-sub-4: exploring pcb design and circuit testing
 <body onload="adjustMobile()">
     <div class="side-nav" id="sideNavigation">
         <ul>
-            <a class="main-link" href="#about">About</a>
-            <a class="main-link" href="#projects">All Projects</a>
+            <a class="main-link" href="../index.html#about">About</a>
+            <a class="main-link" href="../index.html#projects">Projects</a>
+            <a class="main-link" href="../index.html#contact">Contact</a>
             <div class="separator"></div>
             <a href="../projects/portfolio-website.html">{{page.project-title-1}}</a>
-            <a href="#" class="innactivelink">{{page.project-title-2}}</a>
-            <a href="#" class="innactivelink">{{page.project-title-3}}</a>
+            <a href="../projects/ecogrow.html">{{page.project-title-2}}</a>
+            <a href="../projects/mechatronicsproject.html">{{page.project-title-3}}</a>
+            <a href="../projects/spackler.html">{{page.project-title-4}}</a>
         </ul>
     </div>
 
-    <div class="content-wrap" id="content-wrap">
+    <div class="page-wrap" id="page-wrap">
         <a href="#" id="fullpageLink" class="fullpageLink" onclick="toggleNav()"></a>
     <header>
+        <nav id="navbar">
         <ul>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </ul>
-        <nav class="buttonNav" id="buttonNav">
-            <a id="menuButton" href="#" onclick="toggleNav()">
+            <a id="menuButton" href="#sideNavigation" onclick="toggleNav()">
                 <svg id="menu" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                 <g>
@@ -75,7 +77,7 @@ project-sub-4: exploring pcb design and circuit testing
                 </g>
                 </svg>
             </a>
-        </nav>
+            </nav>
         <div class="header-title">
             <h1>Nolan Buzanis</h1>
             <p>Engineer | Innovator | Developer</p>
@@ -100,9 +102,19 @@ project-sub-4: exploring pcb design and circuit testing
 </div>
 
 <script>
+window.onscroll = function () {navScroll()};
+function navScroll() {
+    if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+        document.getElementById('navbar').classList.add("visible");
+    } else {
+        document.getElementById('navbar').classList.remove("visible");
+    }
+
+};
+
     function toggleNav() {
         document.getElementById('sideNavigation').classList.toggle('active');
-        document.getElementById('content-wrap').classList.toggle('active');
+        document.getElementById('page-wrap').classList.toggle('active');
         document.getElementById('fullpageLink').classList.toggle('active')
     };
 
