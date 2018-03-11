@@ -1,8 +1,10 @@
 @charset "UTF-8";
-/*
+
 header {
-    background: url('/img/pottedplant-large.jpeg') center center;
-}*/
+    background: url('/img/spackler-cool2.jpg') center center;
+    background-size: cover;
+    opacity: 1;
+}
 
 .photo-1 {
     background: url('/img/spackler-schematic.png') center center no-repeat;
