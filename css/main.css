@@ -246,6 +246,11 @@ a.gallery-item-4 {
     background: url('../img/spackler-cool.jpg') center center no-repeat;
     background-size: cover;
 }
+a.gallery-item-5 {
+    background: url('../img/quadcopter-cool.jpg') center center no-repeat;
+    background-size: cover;
+    cursor: default;
+}
 
 
 .gallery::after {
