@@ -195,10 +195,11 @@ div.skills-icons {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 0 120px;
 }
 
 .skills-icons img {
-    height: 75px;
+    height: 55px;
 }
 div[class^="skill-"] {
     padding: 10px;
@@ -635,6 +636,10 @@ a[href^="tel:"] {
 }
 
 @media only screen and (max-width : 940px), only screen and (max-device-width : 940px) {
+    div.skills-icons {
+        padding: 0 60px;
+    }
+
     a[class^="gallery-item-"] {
         width: 50%;
     }
@@ -682,8 +687,11 @@ a[href^="tel:"] {
     a[class^="gallery-item-"] {
         width: 100%;
     }
+    div.skills-icons {
+        padding: 0 20px;
+    }
     .skills-icons img {
-        height: 55px;
+        height: 45px;
     }
     .contact-info span {
         font-size: 18px;
