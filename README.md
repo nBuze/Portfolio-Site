@@ -20,4 +20,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](/LICENSE.m
 Acknowledgements
 -
 
-**[@antrikshy](https://github.com/Antrikshy)** - Overall inspiration for creating a personal portfolio and for the hamburger-style navigation menu for mobile devices.
+[@antrikshy](https://github.com/Antrikshy) - Overall inspiration for creating a personal portfolio and for the hamburger-style navigation menu for mobile devices.
